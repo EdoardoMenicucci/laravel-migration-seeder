@@ -23,8 +23,8 @@ class FakerSeeder extends Seeder
             $newTrain->arrival_station = $faker->word();
             $newTrain->departure_time = $faker->dateTime();
             $newTrain->arrival_time = $faker->dateTime();
-            $newTrain->train_code = $faker->randomNumber(9, true);
-            $newTrain->number_of_carriages = $faker->randomNumber(9, false);
+            $newTrain->train_code = $faker->randomNumber(2, true); //fix treni con 745627281 non credo esistano xD
+            $newTrain->number_of_carriages = $faker->randomNumber(2, false); //
             $newTrain->on_time = $faker->boolean();
             $newTrain->cancelled = $faker->boolean();
 
